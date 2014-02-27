@@ -7,10 +7,10 @@ namespace StopBarking.Test
     public class DogWhispererTests
     {
         [Test]
-        public void MyFirstTest(){
-            //var dog = new DogBarking(BarkingMotivation.OtherDogs);
-            //dog.KeepBarking();
-            //Assert.AreEqual(5, result);
+        public void CanRemoveMotivation_BMPeople_FTM120(){
+            var dogBarking = new DogBarking(BarkingMotivation.People);
+            var dogWhisperer = new DogWhisperer { FreeTimeInMinutes = 120 };
+            Assert.True(dogWhisperer.CanRemoveMotivation(dogBarking.Motivation.Value));
         }
 
 
