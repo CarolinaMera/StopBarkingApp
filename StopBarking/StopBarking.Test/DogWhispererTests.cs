@@ -4,7 +4,7 @@ using StopBarking.Model;
 namespace StopBarking.Test
 {
     [TestFixture]
-    public class MyTestFixture
+    public class DogWhispererTests
     {
         [Test]
         public void MyFirstTest(){
@@ -12,5 +12,7 @@ namespace StopBarking.Test
             //dog.KeepBarking();
             //Assert.AreEqual(5, result);
         }
+
+
     }
 }
